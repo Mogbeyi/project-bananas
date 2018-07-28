@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bananas</title>
+    <link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+	
+	<section class="wrapper">
+		<div class="overlay">
+			<header>
+				Bananas
+				<br>
+				<small>...Trust us to help maximize your banana sales</small>
+			</header>		
+		</div>
+		<div class="more">
+			<button id="demo-button">Free Demo <br> <i class="fas fa-arrow-down more-style"></i></button>
+		</div>
+	</section>
+
+	<section class="banana-app" id="main">
+		<button id="close">Close Demo  <i class="fas fa-times"></i></button>
+		<div class="center">
+			<header>
+				<p>
+					<b>IMPORTANT:</b> You can input any number of camels you want BUT we advise that you use just one(1) camel and set its consumption rate to one(1) to get maximum sales.
+				</p>
+				
+ 			</header>
+			<form id="app-form">
+				<input class="app-input" type="text" id="bananas" placeholder="No of bananas" name="bananas" required>
+				<input class="app-input" type="text" id="distance" placeholder="Market distance" name="distance" required>
+				<input class="app-input" type="text" id="camels" placeholder="No of Camels" name="camels" required>
+				<input class="app-input" type="text" id="consumption" placeholder="Camel Consumption" name="camel_consumption" required>
+				<button class="app-button">Calculate</button>
+			</form>
+			
+			<section class="result" id="result">
+				<p id="result-message">
+					<!-- Change this message programmatically -->
+					Hey There. You have <b id="bananasLeft"></b> bananas left for sale. HAPPY SELLING
+				</p>
+			</section>
+		</div>
+	</section>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>

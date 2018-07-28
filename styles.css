@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+.wrapper {
+	background: url(banana-plantation.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+
+.overlay {
+	position: fixed;
+	background: #0A0A21;
+	/* height: 400px; */
+	/* z-index: 1000; */
+	/* top: 0; */
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: .69;
+}
+
+.wrapper header {
+	position: relative;
+	font-size: 40px;
+	text-align: center;
+	/* margin: auto; */
+	font-size: 50px;
+	color: #fafafa;
+	text-transform: uppercase;
+	top: 40%;
+}
+
+.wrapper header small {
+	font-size: 15px;
+	color: #dfdfdf;
+	font-style: italic;
+}
+
+
+.more {
+	position: relative;
+	z-index: 1000;
+	/* background: none; */
+	top: 70%;
+	text-align: center;
+	/* box-shadow: 0 0 black; */
+}
+
+.more button {
+	background: none;
+	outline: none;
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.more-style {
+	color: #687A20;
+	margin-top: 2px;
+	font-size: 20px;
+}
+
+
+section.banana-app {
+	height: 100%;
+	background: ghostwhite;
+	position: relative;
+}
+
+section.banana-app button {
+	background: none;
+    border: none;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    color: #c72525;
+}
+
+/**
+Copied
+**/
+h1 {
+	margin-top: 10%;
+    text-align: center;
+    font-family: sans-serif;
+    color: #757373;
+    /* text-shadow: 0 2px 4px #333; */
+    /* left: 0; */
+    /* right: 0; */
+    font-size: 27px;
+}
+
+.center {
+    position: relative;
+    clear: both;
+}
+
+.center header {
+    text-align: center;
+    color: #959595;
+	padding: 30px;
+	margin-top: 150px;
+	line-height: 25px;
+	text-align: center; 
+	display: flex; 
+	justify-content: center;
+}
+
+.center header p {
+	width: 50%;
+}
+
+form#app-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	max-width: 100%;	
+}
+
+form#app-form input {
+	/* display: block; */
+	padding: 9px;
+    /* margin-bottom: 25px; */
+    width: 25%;
+    /* margin: auto; */
+    color: #484848;
+    /* position: relative; */
+    text-indent: 8px;
+    letter-spacing: 1.1px;
+    background: #f7f7f7;
+    border: 1px solid #97f382;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+form#app-form .app-button{
+	border-radius: 2px;
+    font-size: 15px;
+    background: #2d9022;
+    color: #f7f7f7;
+	padding: 11px;
+	border: none;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px 0 #bdbdbd;
+    /* left: 0; */
+    /* right: 0; */
+    cursor: pointer;
+    /* margin: auto; */
+    width: 25%;
+}
+
+
+/* input[type="text"]{
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+} */
+
+form#app-form .app-button:hover{
+	/* background: white; */
+	outline: #2d9022;
+	
+}
+form#app-form .app-button:focus{
+	/* background: white; */
+	outline: #2d9022;	
+}
+
+section.result {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+    margin-top: 30px;
+    /* background: red; */
+}
+
+section.result p {
+    background: #aa3c34;
+    width: 30%;
+    color: #fafafa;
+    padding: 15px;
+    border-radius: 3px;
+	box-shadow: 0 8px 22px 0 #cfcfcf;;
+	line-height: 20px;
+}
+
+@media only screen 
+	and (min-device-width:320px)
+	and (max-device-width:640px) {
+		form#app-form input {
+			display: block;
+			padding: 9px;
+			/* margin-bottom: 25px; */
+			width: 90%;
+			margin: auto;
+			color: #484848;
+			position: relative;
+			text-indent: 8px;
+			letter-spacing: 1.1px;
+			background: #f7f7f7;
+			border: 1px solid #97f382;
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		
+		form#app-form .app-button{
+			border-radius: 2px;
+			font-size: 15px;
+			background: #2d9022;
+			color: #f7f7f7;
+			padding: 11px;
+			border: none;
+			letter-spacing: 1.2px;
+			text-transform: uppercase;
+			box-shadow: 0 10px 20px 0 #bdbdbd;
+			/* left: 0; */
+			/* right: 0; */
+			cursor: pointer;
+			/* margin: auto; */
+			width: 90%;
+		}
+		.center header {
+			text-align: center;
+			color: #959595;
+			padding: 30px;
+			margin-top: 150px;
+			line-height: 25px;
+			text-align: center; 
+			display: flex; 
+			justify-content: center;
+		}
+		
+		.center header p {
+			width: 100%;
+		}
+		section.result p {
+			background: #aa3c34;
+			width: 90%;
+			color: #fafafa;
+			padding: 15px;
+			border-radius: 3px;
+			box-shadow: 0 8px 22px 0 #cfcfcf;;
+			line-height: 20px;
+		}
+	}
