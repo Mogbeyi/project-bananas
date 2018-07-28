@@ -200,6 +200,33 @@ section.result p {
 	line-height: 20px;
 }
 
+.loader{
+	max-width: 40px;
+	position: relative;
+	animation: bounce 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) .2s infinite;
+}
+
+@keyframes bounce{
+	0% {
+		right: 0px;
+	}
+	20%{
+		right: 5px;
+	}
+	40% {
+		right: 10px;
+	}
+	60%{
+		right: 15px;
+	}
+	80% {
+		right: 20px;
+	}
+	100% {
+		right: 25px;
+	}
+} 
+
 @media only screen 
 	and (min-device-width:320px)
 	and (max-device-width:640px) {
